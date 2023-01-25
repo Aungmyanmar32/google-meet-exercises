@@ -4,42 +4,62 @@ const allUsers = [
   {
     id: 1,
     name: "Aung Aung",
+    image:
+      "https://raw.githubusercontent.com/Aungmyanmar32/google-meet-exercises/main/img0.jpg",
   },
   {
     id: 2,
     name: "Su Su",
+    image:
+      "https://raw.githubusercontent.com/Aungmyanmar32/google-meet-exercises/main/img1.jpg",
   },
   {
     id: 3,
     name: "Bo Bo",
+    image:
+      "https://raw.githubusercontent.com/Aungmyanmar32/google-meet-exercises/main/img2.jpg",
   },
   {
     id: 4,
     name: "Jack",
+    image:
+      "https://raw.githubusercontent.com/Aungmyanmar32/google-meet-exercises/main/img3.jpg",
   },
   {
     id: 5,
     name: "Hla Hla",
+    image:
+      "https://raw.githubusercontent.com/Aungmyanmar32/google-meet-exercises/main/img4.jpg",
   },
   {
     id: 6,
     name: "Ko Ko",
+    image:
+      "https://raw.githubusercontent.com/Aungmyanmar32/google-meet-exercises/main/img5.jpg",
   },
   {
     id: 7,
     name: "John",
+    image:
+      "https://raw.githubusercontent.com/Aungmyanmar32/google-meet-exercises/main/img6.jpg",
   },
   {
     id: 8,
     name: "Mary",
+    image:
+      "https://raw.githubusercontent.com/Aungmyanmar32/google-meet-exercises/main/img7.jpg",
   },
   {
     id: 9,
     name: "Kyaw Kyaw",
+    image:
+      "https://raw.githubusercontent.com/Aungmyanmar32/google-meet-exercises/main/img8.jpg",
   },
   {
     id: 10,
     name: "Ma Ma",
+    image:
+      "https://raw.githubusercontent.com/Aungmyanmar32/google-meet-exercises/main/img9.jpg",
   },
 ];
 
@@ -56,7 +76,7 @@ for (let i = 0; i < 10; i++) {
   micDiv.classList.add("micDiv", "micOff");
 
   const img = document.createElement("img");
-  img.src = `/images/img${i}.jpg`;
+  img.src = allUsers[i].image;
 
   const userDiv = document.createElement("div");
   userDiv.textContent = allUsers[i].name;
