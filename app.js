@@ -79,7 +79,9 @@ for (let i = 0; i < 10; i++) {
   img.src = allUsers[i].image;
 
   const userDiv = document.createElement("div");
-  userDiv.textContent = allUsers[i].name;
+  const userNameTag = document.createElement("div");
+  userNameTag.textContent = allUsers[i].name;
+  userNameTag.classList.add("userNameTag");
 
   if (i === 3) {
     userDiv.classList.add("active");
@@ -90,7 +92,7 @@ for (let i = 0; i < 10; i++) {
     userDiv.classList.add("userDiv");
   }
 
-  userDiv.append(img, micDiv, hoverDiv);
+  userDiv.append(img, micDiv, hoverDiv, userNameTag);
   //   userDiv.innerHTML = `
   //<img src="/images/img${i}.jpg" />
   //   <div class="micDiv"><i class="fa-solid fa-microphone-slash"></i></div>

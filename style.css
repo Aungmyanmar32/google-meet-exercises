@@ -21,7 +21,7 @@ body {
   width: 150px;
   height: 150px;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -38,6 +38,12 @@ body {
   margin-bottom: 5px;
 }
 
+.userNameTag {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0.5rem;
+}
 .active {
   border: 2px solid blue;
 }
