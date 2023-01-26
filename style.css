@@ -90,19 +90,20 @@ body {
   color: aliceblue;
   text-align: center;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 
-.btn,
-.handup {
-  background-color: gray;
-  padding: 5px;
-  border-radius: 50%;
-  margin: 2px 5px;
-  width: 1.6rem;
+.controller ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
-.handup {
-  background-color: red;
+.controller li {
+  margin: 2rem;
+  background-color: #202124;
+  padding: 0.4rem;
+  border-radius: 50%;
+  width: 1.6rem;
 }
